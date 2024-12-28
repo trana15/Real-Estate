@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap'); 
+
+                                            /* HOME PAGE */
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    position: sticky;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 40px;
+}
+.head-link a{
+    color: white;
+    padding: 6px;
+    font-size: 20px;
+}
+#first{
+    margin-left: 60px;
+}
+.head-contact{
+    margin-right: 60px;
+    font-size: 15px;
+}
+.navbar a{
+    font-size: 14px;
+    font-weight: 600;
+}
+.nav-link:hover{
+    color: black;
+    font-weight: 700;
+    background-color: #e6e4e4;
+}
+.dropdown-item:hover{
+    font-weight: 700;
+}
+.navbar-toggler{
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background: #fff;
+}
+.w-100-height{
+    height: 90vh;
+    width: 100%;
+} 
+.carousel-item{
+    min-height: 300px;
+}
+.carousel-caption{
+    text-align: left;
+    margin-bottom: 100px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: left;
+}
+section{
+    display: inline;
+    font-style: italic;
+    text-transform: capitalize;
+    font-family:cursive ;
+    font-weight: 200;
+    font-size: 40px;
+}
+.carousel-caption p{
+    width: 60%;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.9;
+}
+.carousel-item .carousel-caption input{
+    padding: 0.73rem 1rem;
+}
+.carousel-inner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.card-bottom{
+    right: 0;
+    margin-top: -230px;
+}
+.card-text{
+    color: #aeaeae;
+}
+.card-color{
+    background: black; 
+}
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        margin-bottom: 50px;
+    }
+    .carousel-caption h5{
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    .carousel-caption p{
+        padding: 10px 15px;                                                                                                                                                                                                                                                                                                                                                                                                                   
+    }
+    .carousel .card-bottom{
+        display: none;
+    }
+}
+.info{
+    background-image: url(images/hero5.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+.info-content{
+    margin-left: 50%;
+    color: white;
+    /* animation-name: slide;
+    animation-duration: 3s; */
+}
+/* @keyframes slide{
+    from{margin-bottom: 0px;}
+    to{margin-bottom: 900px;}
+} */
+.info-content h3{
+    font-size: 60px;
+    font-family: 'Libre Baskerville';
+    line-height: 1.2em;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+.info-content p{
+    margin-right: 20%;
+    font-size: larger;
+}
+.info-content h5{
+    font-weight: bold;
+}
+@media only screen and (max-width: 767px){
+    .info{
+        text-align: center;
+        display: inline-block;
+    }
+    .info-content{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10px;
+    }
+    .info-content h3{
+        font-size: 50px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    .info-content p{
+        margin-right: 10%;
+    }
+}
+
+                                         /* ABOUT PAGE */
+.about{
+    background-image: url(images/about.jpg);
+    height: 50vh;
+    width: 100vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about h1{
+    color: white;
+    font-size: 60px;
+    font-family: 'Libre Baskerville';
+}
+
+.content{
+    margin: 2% 20% 2% 20% ;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.content h3{
+    font-weight: 600;
+    font-style:inherit;
+    margin-bottom: 5px;
+}
+
+.content p{
+    font-size: 16px;
+}
+.color{
+    background-color: #f7d08a ;
+    height: 40vh;
+}
+
+.about-img{
+    height: 200px;
+    border: 15px solid rgb(203, 203, 203);
+    margin-left: 10px;
+    margin-right: 20px;
+}
+                                        /* featured */
+
+.featured-prop{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.container h1{
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Libre Baskerville';
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    transition: transform 1s;
+}
+
+.card-img-top{
+    height: 200px;
+}
+.card{
+    margin-top: 20px;
+    width: 18rem;
+    transition: transform 1s;
+}
+.card:hover ,.container h1:hover{
+    transform: scale(1.1);
+}
+.card-body{
+    background-color:#e8e5e5;
+}
+.card-text{
+    color: rgba(4, 1, 1, 0.383);
+    margin-bottom: 40px;
+}
+
+.featured-index{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.button{
+    height: 2rem;
+    width: 5rem;
+    border-radius: 5px;
+    border: 2px solid #7a7676;
+    position: absolute;
+    bottom: 10px;
+
+}
+.button:hover{
+    background-color: #cac6c6;
+    border: none;    
+}
+.button a{
+    text-decoration: none;
+    color: black;
+}
+
+/* FOOTER */
+
+.bg-footer{
+    background-color: #000;
+    padding: 50px 0 30px;
+    color: rgb(179, 178, 178); 
+}
+.bg-footer a{
+    text-decoration: none;
+    color: rgb(179, 178, 178);
+}
+.bg-footer h5{
+    color: white;
+}
+.second-row{
+    text-align: center;
+}
+.second-row a{
+    color: grey;
+}
