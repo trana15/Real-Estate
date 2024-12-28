@@ -131,7 +131,7 @@ section{
     }
 }
 .info{
-    background-image: url(hero5.jpg);
+    background-image: url("hero5.jpg");
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -186,7 +186,7 @@ section{
 
                                          /* ABOUT PAGE */
 .about{
-    background-image: url(about.jpg);
+    background-image: url("about.jpg");
     height: 50vh;
     width: 100vw;
     background-size: contain;
